@@ -1,0 +1,43 @@
+#blue1 {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    text-align:center;
+}
+#Pic{
+    text-align:center;
+}
+#questions{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align:center;
+}
+
+body {
+    background-image: url("pokemonoriginal.jpg"), url(pokemonoriginalflip.jpg), url("pokemonoriginal.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: 50% 0%, 50% 50%, 100% 100%;
+}
+
+.card {
+    width:300px;
+}
+
+.navPadding {
+    padding-left:75px;
+}
+
+.textLine {
+    padding-left:600px;
+    padding-right:600px;
+}
+
+/*https://i.pinimg.com/originals/03/15/e9/0315e997ab28f4f837fd68a23c92b9a1.jpg*/
