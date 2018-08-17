@@ -95,20 +95,14 @@ def randomGIF
     return @gifData['data']['images']['fixed_width']['url'];
 end
 
-def randomPoke
-    @pokeData = HTTParty.get('http://pokeapi.co/api/v2/pokemon/25/');
-    @pokeData = @pokeData.to_s;
-    @pokeData = JSON.parse(@pokeData)
-    return @pokeData['weight']
-end
-
 # def randomPoke
 #     @pokeData = HTTParty.get('http://pokeapi.co/api/v2/pokemon/25/');
 #     @pokeData = @pokeData.to_s;
 #     @pokeData = JSON.parse(@pokeData)
-#     return @pokeData[rand]['weight']
+#     return @pokeData[25]['weight']
 # end
-# puts response[0]['question']
+
+
 
 
 

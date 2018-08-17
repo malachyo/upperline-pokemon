@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   get '/' do
     # puts HTTParty.get("http://pokeapi.co/api/v2/pokemon/1")
     # response = HTTParty.get('http://pokeapi.co/api/v2/pokemon/1')
-    @pokeStats = randomPoke
+    # @pokeStats = randomPoke
     return erb :index
   end
   
