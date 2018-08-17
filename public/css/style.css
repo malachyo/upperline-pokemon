@@ -6,6 +6,7 @@
     -1px 1px 0 #000,
     1px 1px 0 #000; 
     text-align:center;
+    padding-top: 30px;
 }
 #Pic{
     text-align:center;
@@ -20,12 +21,18 @@
     text-align:center;
 }
 
-body {
-    background-image: url("pokemonoriginal.jpg"), url(pokemonoriginalflip.jpg), url("pokemonoriginal.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; 
+#backgroundSettings {
+    background-image: url(calmestBR.jpg), url(pokemonoriginal.jpg);
+    background-repeat: repeat;
+    background-size: 100%, 100%, 100%; 
     background-position: 50% 0%, 50% 50%, 100% 100%;
 }
+
+/*#example1 {*/
+/*    background-image: url(img_flwr.gif), url(paper.gif);*/
+/*    background-position: right bottom, left top;*/
+/*    background-repeat: no-repeat, repeat;*/
+/*}*/
 
 .card {
     width:300px;

@@ -6,13 +6,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body>
+    <body id = "backgroundSettings">
         <nav class = "teal navPadding">
         <div class="nav-wrapper">
             <a href="/" class="brand-logo"><i class="material-icons">poll</i>Pokémon Quiz</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li class="active"><a href="/">Home</a></li>
             <li><a href="about.erb">About</a></li>
+            <li><a href="index3.erb">Quiz</a></li>
+
         </div>
        </div>
       </div>
@@ -20,147 +22,28 @@
     </body>
     <body>
         <h1 id="blue1">
-           Who's That Pokemon?
-        </h1>
-    <div id="Pic">
+           Who's That Pokemon?  
+           <br>
+           <br>
+           <div id="Pic">
         <img src="https://media.giphy.com/media/DRfu7BT8ZK1uo/giphy.gif">
-            <p id="blue1"> 
-                Input only "Y'(for yes) or "N" (for no)
-            </p>
-    </div>
-    <div id="questions">
-        <h5>
-            Is it Fictional?
-        </h5>
-        <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno"/> 
-        <input type="submit" value="Enter"/>
-    </form>
-    <p> <%= @result %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Can it speak?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-      <input type="text" name="yesno2"/> 
-      <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result2 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Can it say more than one word?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno3"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result3 %></p>
-    </div>
-
-<br>
-<br>
-    <h5>
-        Is it animated?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno4"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result4 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Is it a Pokemon?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno5"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result5 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Is it taller than 5 feet?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno6"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result6 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Is it a type that is weak to Ground type of attacks?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno7"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result7 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Is it one of Misty's or Brock's pokemon?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno8"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result8 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Is it starter pokemon?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno9"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result9 %></p>
-    </div>
-<br>
-<br>
-    <h5>
-        Will Team Rocket not cease in trying to capture it?
-    </h5>
-    <div class="textLine">
-    <form action="/index" method="post">
-        <input type="text" name="yesno10"/> 
-        <input type="submit" value="Enter"/> 
-    </form>
-    <p> <%= @result10 %></p>
-    </div>
-<br>
-<br>
-</div>
-
-<form action="/index2" method="post">
-    <form class="btn-floating pulse">
-    <p align="center">
-        <input type="submit" name="Submit">
-    </p>
-</form>
+        </h1>
     <!--<form action="/index2.hrb" target="_self" method="post">-->
     <!--      <input type="submit" value="Submit">-->
     <!--</form>-->
+<br>
+<h5 id = "questions">
+        Randomized Pokémon Stats
+</h5>
+<br>
+
+<p id="questions">
+    
+Weight: <br>
+<%= @pokeStats %>
+
+</p>
+
 
 </body>
 </html>
